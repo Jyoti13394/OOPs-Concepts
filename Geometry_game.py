@@ -25,5 +25,5 @@ class Rectangle:
 rect = Rectangle(Point(randint(0, 9), randint(0, 9)), Point(randint(10, 19), randint(10, 19)))
 print("Rectangle cordinates are :", rect.low_left.x, ",", rect.low_left.y, ",", rect.up_right.x,",", rect.up_right.y)
 user_point = Point(int(input("Guess X: ")), int(input("Guess Y: ")))
-print(user_point.falls_in_rectangle(rect))
+print("Your point was inside the rectangle:", user_point.falls_in_rectangle(rect))
 print("Distance between 2 points is: ", user_point.calc_distance(Point(5, 23)))
